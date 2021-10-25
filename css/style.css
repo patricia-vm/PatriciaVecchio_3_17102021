@@ -1,7 +1,7 @@
 
+                                    /*--Mobile--*/      
 @media screen and (max-width: 767px){
-   /*--MOBILE--*/ 
-
+                                    
    body{
        margin: 0;
        padding: 0;
@@ -22,7 +22,7 @@
         margin: 30px 30px;
     }
 
-    /*--Media query Header--*/
+    /*--Media query Header M--*/
     .header__logo{
         display: flex;
         justify-content: center;
@@ -52,7 +52,7 @@
         border: transparent;
         background-color: #e2e2e2;
     }
-    /*--article--*/
+    /*--article M--*/
     article{
         width: 100%; 
         height: 300px;     
@@ -84,14 +84,13 @@
     }
     .booking__btn-1{
        background-color: #FF79DA;
-    color: #fff;
+       color: #fff;
     }
 
-    /*--Aside--*/
+    /*--Aside M--*/
      aside .steps{
         display: flex;
-        flex-direction: column; 
-        background-color: ;  
+        flex-direction: column;  
      }   
     aside .button-2, .button-3, .button-4{
         display: flex;
@@ -129,40 +128,39 @@
         color: #000;
     }
 
-    /*--Section--*/
+    /*--Section M--*/
     #restaurants{
         width: 100%;
         background-color: #F5F5F5;
-       
+        height: auto;
     }
     .places{
         flex-wrap: wrap;
-       
         padding-top: 50px;
         width: 100%;
         height: auto;
     }
     .title{
-       padding: 30px 25px 25px;
+       padding: 30px 25px 0;
     }
     figure{
-        margin-right: 16px;
-        margin-left: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .restaurant-card{ 
         flex wrap: wrap;
         flex-direction: column;
         border-radius: 20px;
         background-color: #fff;
-        box-shadow: rgba(255, 255, 255, 0.904);
+        box-shadow: 2px 2px 2px #f2f2f2;
         width: 95%;
         height: 200px;  
-        margin-bottom: 100px;
-        width: auto;
+        margin-bottom: 100px;;
+       
     }
     .picture{
         object-fit: cover;
-        border-top-left-radius: 20px;
+        border-top-left-radius: 20x;
         border-top-right-radius: 20px;  
         
     } 
@@ -191,10 +189,11 @@
     }
     .fa-heart{
         font-size: 1.2em;
-        padding-left: 300px;
-        padding-bottom: 150px;
+        position: relative;
+        bottom: 110px;
+        left: 280px;
     }
-    /*--Footer--*/
+    /*--Footer M--*/
     footer{
        background-color: rgb(63, 61, 61); 
        padding: 20px;
@@ -218,3 +217,454 @@
        font-size: 0.9em;
     }
 }
+
+
+
+                                 /*--Tablette--*/
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+
+    /*--Header T--*/
+    .header__logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+     .header__logo a{
+        font-size: 1em;
+    }
+    .search__location{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e2e2e2;
+        width: 100%;
+        height: 55px;
+        border-top: 4px #d2d6d6 solid;
+        padding: 15px; 
+    }
+    .search__icon{
+        padding-right: 15px;
+        padding-left: 25px;
+    }
+    .text_color::placeholder{
+        color: black;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    input{
+        border: transparent;
+        background-color: #e2e2e2;
+    }
+
+    /*--Article T--*/
+    article{
+        width: 100%; 
+        height: 250px;     
+        background-color: #F5F5F5; 
+    }
+    article h1{
+        text-align: center;
+        font-size: 1.5em;
+        padding: 35px 50px 5px;
+        margin-top: 0;
+    }
+    article h2{
+        text-align: center;
+        font-size: 1em;
+        color: grey;
+        padding: 0 20px 25px;
+        font-weight: normal;  
+    }
+    article a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 1px transparent solid;
+        border-radius: 50px;
+        margin-right: 200px;
+        margin-left: 200px;
+        height: 50px;
+    }
+    .booking__btn-1{
+       background-color: #FF79DA;
+       color: #fff;
+    }
+
+    /*--Aside T--*/
+    aside .steps{
+        display: flex;
+        justify-content: space-between;        
+    }   
+    .title{
+        padding-top: 15px;
+        padding-left: 15px;
+     }
+    aside .button-2, .button-3, .button-4{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        text-decoration: none;
+        border: 1px transparent solid;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px #ceccccec;
+        width: 30%;
+        height: 70px;
+        background-color: #F5F5F5;
+        margin-bottom: 20px;
+    } 
+    .button-2{
+        margin-left: 20px;
+    }
+    .button-4{
+        margin-right: 20px;
+     }
+    aside .round{
+        width: 22px;
+        height: 20px;
+        border-radius: 100%;
+        text-align: center;
+        padding-top: 7px;
+        background-color: #9356DC;
+        color:  #fff;
+        font-size: 0.9em;
+        position: relative;
+        right: 10px;
+    }
+    .icon{
+        color: grey;
+        font-size: 1.2em;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+    .text{
+        font-weight: bold;
+        color: #000;
+    }
+
+    /*--Section T--*/
+    #restaurants{
+    width: 100%;
+       background-color: #F5F5F5;
+      
+    }
+    .places{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+        width: 100%;
+        height: 400px;
+    }
+    .title{
+       padding: 30px 25px 0;
+    }
+    figure{
+        width: 35%;
+        padding-right: 10px;
+        padding-left: 10px; 
+    }
+    .restaurant-card{ 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px #f2f2f2;
+        width: 100%;
+        height: 200px;  
+        margin-bottom: 100px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .picture{
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;  
+        
+    } 
+    .information{
+        font-size: 0.95em;
+        padding-bottom: 200px;
+        padding-right: 135px; 
+    }
+    .information h3{
+        margin-bottom: 0;
+    }
+    .new{
+        width: 70px;
+        height: 20px;
+        background-color: #99E2D0;
+        font-size: 0.9em;
+        text-align: center;
+        padding-top: 5px;
+        color: #257e67;
+        font-weight: bold;
+        position: relative;
+        bottom: 120px;
+        left: 200px;
+    }
+    .fa-heart{
+        font-size: 1.2em;
+        position: relative;
+        bottom: 50px;
+        left: 250px;
+    }
+    
+    /*--Footer T--*/
+    footer{
+        margin-top: 200px;
+        background-color: rgb(63, 61, 61); 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+     }
+     .footer-logo{
+         font-size: ;
+         color: #fff;
+     }
+     ul li{
+         list-style-type: none;
+         padding-right: 35px;
+     }
+     .footer-links a{
+         color: #fff; 
+         text-decoration: none;
+         font-size: 0.9em; 
+         padding-bottom: 5px;;    
+     }
+     .footer-links i{
+        padding-right: 15px;
+        color: #fff;
+        font-size: 0.9em;
+     }
+}
+
+
+
+                                /*--Desktop--*/
+@media screen and (min-width: 1280px){
+
+    /*--Header D--*/
+   header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 5px 20px;
+    }
+    .search__location, input{
+       background-color: #FF79DA;
+       border-radius: 25px;
+       margin-right: 25px; 
+    }
+    .search__icon, .input-field{
+        display: inline-block;
+        padding-left: 25px;   
+    }
+    input{
+        border: none;
+        width: 150px;
+        height: 50px;  
+        padding-left: 15px;
+    }
+    .text_color::placeholder{
+        color: ##9356DC;
+        font-weight: bold;
+        font-size: 1.2em; 
+    }
+    
+    /*--Article D--*/
+    article{
+        width: 100%; 
+        height: 250px;     
+        background-color: #F5F5F5;
+        box-shadow: 2px 2px 2px #d2d6d6;
+    }
+    article h1{
+        text-align: center;
+        font-size: 1.6em;
+        padding: 35px 0 5px;  
+    }
+    article h2{
+        text-align: center;
+        font-size: 1em;
+        color: grey;
+        padding: 0 0 25px;
+        font-weight: normal;  
+    }
+    article a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 1px transparent solid;
+        border-radius: 50px;
+        margin-right: 500px;
+        margin-left: 500px;
+        height: 60px;  
+    }
+    .booking__btn-1{
+       background-color: #FF79DA;
+       color: #fff;
+       font-size: 1.2em;
+    } 
+
+     /*--Aside D--*/
+    aside .steps{
+        display: flex;
+        justify-content: space-between;        
+    }   
+    .title{
+        padding-top: 15px;
+        padding-left: 15px;
+     }
+    aside .button-2, .button-3, .button-4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        border: 1px transparent solid;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px #ceccccec;
+        width: 30%;
+        height: 70px;
+        background-color: #F5F5F5;
+        margin-bottom: 20px;
+    } 
+    .button-2{
+        margin-left: 18px;
+    }
+    .button-4{
+        margin-right: 18px;
+     }
+    aside .round{
+        width: 25px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 2px;
+        background-color: #9356DC;
+        color:  #fff;
+        font-size: 0.9em;
+        position: relative;
+        right: 10px;
+     }
+    .button-2 .round{
+        position: relative;
+        right: 10px;
+        }
+    .icon{
+        color: grey;
+        font-size: 1.3em;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+    .button-3 .icon, .button-4 .icon{
+        padding-left: 20px;
+     }
+    .text{
+        font-weight: bold;
+        color: #000;
+        padding-left: 35px;
+    }  
+
+    /*--Section D--*/
+    #restaurants{
+        background-color: #F5F5F5;
+       
+    }
+    .places{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .title{
+       padding: 30px 25px 25px;
+    }
+    figure{
+        width: 18%; 
+    }
+    .restaurant-card{ 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px #f2f2f2;
+        width: 100%;
+        height: 200px;  
+        margin-bottom: 100px;
+        padding-right: 15px;
+        padding-left: 15px; 
+    }
+    .picture{
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;  
+        width: 290px;
+    } 
+    .information{
+        font-size: 0.95em;
+        padding-top: 50px;
+        padding-left: 15px; 
+    }
+    .information h3{
+        margin-bottom: 0;
+    }
+    .new{
+        width: 70px;
+        height: 20px;
+        background-color: #99E2D0;
+        font-size: 0.9em;
+        text-align: center;
+        padding-top: 5px;
+        color: #257e67;
+        font-weight: bold;
+        position: relative;
+        bottom: 160px;
+        left: 215px;
+    }
+    .fa-heart{
+        font-size: 1.2em;
+        padding-left: 300px;
+        padding-bottom: px;
+    }
+
+    /*--Footer D--*/
+    footer{
+        background-color: rgb(63, 61, 61); 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+     }
+     .footer-logo{
+         font-size: ;
+         color: #fff;
+     }
+     ul li{
+         list-style-type: none;
+         padding-right: 35px;
+     }
+     .footer-links a{
+         color: #fff; 
+         text-decoration: none;
+         font-size: 0.9em; 
+         padding-bottom: 5px;;    
+     }
+     .footer-links i{
+        padding-right: 15px;
+        color: #fff;
+        font-size: 0.9em;
+     }
+     /*--end--*/
+
+}
+        
