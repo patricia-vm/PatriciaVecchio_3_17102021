@@ -83,7 +83,7 @@
         height: 50px;
     }
     .booking__btn-1{
-       background-color: #FF79DA;
+       background: linear-gradient(#FF79DA, #9356DC);
        color: #fff;
     }
 
@@ -155,14 +155,13 @@
         box-shadow: 2px 2px 2px #f2f2f2;
         width: 95%;
         height: 200px;  
-        margin-bottom: 100px;;
-       
+        margin-bottom: 100px;
+        padding-left: 15px; 
     }
     .picture{
         object-fit: cover;
-        border-top-left-radius: 20x;
+        border-top-left-radius: 20px;
         border-top-right-radius: 20px;  
-        
     } 
     .information{
         font-size: 0.95em;
@@ -289,7 +288,7 @@
         height: 50px;
     }
     .booking__btn-1{
-       background-color: #FF79DA;
+        background: linear-gradient(#FF79DA, #9356DC);
        color: #fff;
     }
 
@@ -456,7 +455,7 @@
         padding: 20px 0 5px 20px;
     }
     .search__location, input{
-       background-color: #FF79DA;
+        background: linear-gradient(#FF79DA, #9356DC);
        border-radius: 25px;
        margin-right: 25px; 
     }
@@ -507,9 +506,9 @@
         height: 60px;  
     }
     .booking__btn-1{
-       background-color: #FF79DA;
-       color: #fff;
-       font-size: 1.2em;
+        background: linear-gradient(#FF79DA, #9356DC);
+        color: #fff;
+        font-size: 1.2em;
     } 
 
      /*--Aside D--*/
@@ -666,5 +665,21 @@
      }
      /*--end--*/
 
+                    /*--Loader--*/  
+                /* (ball blue, pink, mint)*/
+    /*.load__ball--1{                      
+        width: 25px;
+        background-color: #9356DC;
+    }
+    .load__ball--2{
+        width: 25px;
+        background-color: #FF79DA;
+    }
+    .load__ball--3{
+        width: 25px;
+        background-color: #99E2D0;
+    }
+
+    */
 }
         
