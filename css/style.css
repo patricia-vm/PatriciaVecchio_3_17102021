@@ -1,5 +1,4 @@
-
-                                    /*--Mobile--*/      
+/*--Mobile--*/      
 @media screen and (max-width: 767px){
                                     
    body{
@@ -148,7 +147,7 @@
         margin-left: 10px;
     }
     .restaurant-card{ 
-        flex wrap: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         border-radius: 20px;
         background-color: #fff;
@@ -198,7 +197,7 @@
        padding: 20px;
     }
     .footer-logo{
-        font-size: ;
+        font-size: 0;
         color: #fff;
     }
     ul li{
@@ -422,7 +421,7 @@
         text-align: center;
      }
      .footer-logo{
-         font-size: ;
+         font-size:0 ;
          color: #fff;
      }
      ul li{
@@ -470,7 +469,7 @@
         padding-left: 15px;
     }
     .text_color::placeholder{
-        color: ##9356DC;
+        color: #9356DC;
         font-weight: bold;
         font-size: 1.2em; 
     }
@@ -645,7 +644,7 @@
         text-align: center;
      }
      .footer-logo{
-         font-size: ;
+         font-size: 0;
          color: #fff;
      }
      ul li{
