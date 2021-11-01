@@ -1,0 +1,42 @@
+                        /*--française.css--*/
+ body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}     
+.header__logo h1{
+    font-family: 'Shrikhand', cursive;
+}   
+.footer-logo h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.restaurant-name h1{
+    font-family: 'Shrikhand', cursive;
+}
+a, p, h2, h3, div, ul, li{
+    font-family: 'Roboto', sans-serif;
+}  
+  
+
+
+                    /*---------------------------------------$:
+
+                   /*--Mobile--*/
+@media screen and (max-width: 767px){
+    
+}
+
+
+    /*--Tablette--*/
+@media screen and (min-width: 768px) and (max-width: 1280px){
+
+}
+
+
+  /*--Desktop--*/
+@media screen and (min-wdth: 1280px){
+    
+}
+    

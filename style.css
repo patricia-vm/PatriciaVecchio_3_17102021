@@ -6,11 +6,11 @@
        padding: 0;
        box-sizing: 0;
    }
-    .header__logo, title {
+    .header__logo h1,  .footer-logo h2{
         font-family: 'Shrikhand', cursive;
     }
 
-    html{
+    a, p, h1, h2, h3, div, ul, li{
         font-family: 'Roboto', sans-serif;
     }
  
@@ -211,7 +211,7 @@
        background-color: rgb(63, 61, 61); 
        padding: 20px;
     }
-    .footer-logo h1{
+    .footer__logo h2{
         font-size: 1.2em;
         color: #fff;
         font-family: 'Shrikhand', cursive;
@@ -220,13 +220,13 @@
     ul li{
         list-style-type: none;
     }
-    .footer-links a{
+    .footer__links a{
         color: #fff; 
         text-decoration: none;
         font-size: 0.9em; 
         padding-bottom: 5px;   
     }
-    .footer-links i{
+    .footer__links i{
        padding-right: 15px;
        color: #fff;
        font-size: 0.9em;
@@ -451,7 +451,7 @@
         width: 100%;
         text-align: center;
      }
-     .footer-logo h1{
+     .footer__logo h2{
         font-size: 1.3em;
         color: #fff;
         font-family: 'Shrikhand', cursive;
@@ -461,13 +461,13 @@
          list-style-type: none;
          padding-right: 35px;
      }
-     .footer-links a{
+     .footer__links a{
          color: #fff; 
          text-decoration: none;
          font-size: 0.9em; 
          padding-bottom: 5px;;    
      }
-     .footer-links i{
+     .footer__links i{
         padding-right: 15px;
         color: #fff;
         font-size: 0.9em;
@@ -693,7 +693,7 @@
         width: 100%;
         text-align: center;
      }
-     .footer-logo h1{
+     .footer__logo h2{
         font-size: 1.5em;
         color: #fff;
         font-family: 'Shrikhand', cursive;
@@ -703,13 +703,13 @@
          list-style-type: none;
          padding-right: 35px;
      }
-     .footer-links a{
+     .footer__links a{
          color: #fff; 
          text-decoration: none;
          font-size: 0.9em; 
          padding-bottom: 5px;;    
      }
-     .footer-links i{
+     .footer__links i{
         padding-right: 15px;
         color: #fff;
         font-size: 0.9em;

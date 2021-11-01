@@ -1,0 +1,247 @@
+                 /*--palette.css--*/
+
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}     
+.header__logo h1{
+    font-family: 'Shrikhand', cursive;
+} 
+.footer__logo h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: normal;
+}
+.restaurant-name h1{
+    font-family: 'Shrikhand', cursive;
+}  
+a, p, h2, h3, div, ul, li{
+    font-family: 'Roboto', sans-serif;
+}  
+/*--header--*/
+ .header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo h1{
+    padding-right: 60px;
+    padding-left: 45px;
+    color: #000;
+    font-size: 1.8em;
+    text-decoration: none;
+}  
+ .header__logo .fa-arrow-left{
+     color: #000;
+ }
+.picture{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+/*--Main--*/
+.grey-box{
+    background-color: #F5f5f5;
+    border-top-left-radius: 40px;
+    border-top-right-radius:40px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.restaurant-name{
+    display: flex;
+}
+.restaurant-name h1{
+    font-size: 1.5em;
+    padding-left: 25px;
+}
+.heart{
+   padding-top: 25px;
+   padding-left: 70px;
+}
+
+/*--Section--*/
+.menu__card{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.subtitle{
+    font-size: 0.9em;
+    font-weight: none;
+    padding-left: 15px;
+    border-bottom:  1px solid #99E2D0;
+
+}
+.h3{
+    font-size: 0.75em; 
+    margin-bottom: 0;
+  
+}
+
+.menu__details{
+  
+}
+.p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p, .price, .checkbox{
+    display: inline-block;
+    margin-top: 0;
+    font-size: 0.7em;
+}
+.price{
+    padding-left: 100px;
+   
+}
+.menu__text-1{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+.menu__text-2{
+    width: 96%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.menu__text-3{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.menu__text-4{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+.menu__text-5{
+    width: 96%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.menu__text-6{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.menu__text-7{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.menu__text-8{
+    width: 96%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.menu__text-9{
+    width: 95%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+/*--Footer--*/
+footer{
+    background-color: rgb(63, 61, 61); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+   
+ }
+ .footer__logo h2{
+     padding-left: 40px;
+}
+ ul li{
+     list-style-type: none;
+     padding-right: 35px;
+ }
+ .footer__links a{
+     color: #fff; 
+     text-decoration: none;
+     font-size: 0.9em; 
+     padding-bottom: 5px;    
+ }
+ .footer__links i{
+    padding-right: 15px;
+    color: #fff;
+    font-size: 0.9em;
+ }
+                            /*-------------------------------------------------------------------*/        
+
+/*--Mobile--*/
+@media screen and (max-width: 767px){
+/*--Header M--*/
+.header__logo{
+  
+    }
+/*--Main M--*/
+.grey-box{
+   
+}   
+/*--Section M--*/
+.restautant-name{
+
+    }
+
+
+}
+
+/*__Footer M--*/
+.footer{
+    width: 100%;
+}
+}
+
+/*--Tablette--*/
+@media screen and (min-width: 768px) and (max-width: 1280px){
+
+
+}
+
+
+/*--Desktop-*/
+@media screen and (min-width: 1280px){
+
+
+
+}
