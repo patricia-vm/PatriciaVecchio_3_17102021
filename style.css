@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
  .header__logo,  .footer-logo h2{
      font-family: 'Shrikhand', cursive;
@@ -623,47 +623,94 @@ ul li{
      }
 
  }
-     /*--end--*/
+ /*--end--*/
 
-                    /*--Loader--*/  
-                /* (ball blue, pink, mint)*/
-    .load__ball--1{                      
+/*--------Loader---------*/  
+/* (ball blue, pink, mint)*/
+   
+    .load__ball--1{                    
         width: 50px;
         height: 50px;
         background-color: #9356DC;
-        border-radius: 50%;
-    }
-
-  .progress{
-      animation: progress 1000ms;
-      }
-  
-
-    @keyframes load__ball--1{
-        0%{
-            transform: ;
-        }
-    }
-
-
-
-    .load__ball--2{
+        border-radius: 50%;   
+        -webkit-animation: load__ball--1 0.65s linear both;
+     }       
+     
+     .load__ball--2{
         width: 50px;
         height: 50px;
         background-color: #FF79DA;
-        border-radius: 50%;
-    }
+        border-radius: 50%;  
+        -webkit-animation: load__ball--2 0.65s linear both;
+      }
 
-
-
-
-
-
-    .load__ball--3{
+      .load__ball--3{
         width: 50px;
         height: 50px;
         background-color: #99E2D0;
-        border-radius: 50%;
+        border-radius: 50%;  
+        -webkit-animation: load__ball--3 0.65s linear both;
+      }
+      
+ 
+ /* ----------------------------------------*/
+ /* animation load__ball*/
+ /* ----------------------------------------*/
+ 
+ /*body:active{
+    background-color: #ec96d4;
+    opacity: 0;
+    }*/
+
+@keyframes load__ball--1 {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
     }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+    }
+  }
+
+ @keyframes load__ball--2{
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes load__ball--3{
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+  }
+  
+   
+
+  /*.progress{
+      animation: progress 1000ms;
+      }*/
+  
+
+
+
+   
+
+
+
+
+
 
   

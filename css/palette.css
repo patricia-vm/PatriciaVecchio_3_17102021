@@ -46,7 +46,8 @@ a, p, h2, h3, div, ul, li{
     background-color: #f5f5f5;
     border-top-left-radius: 40px;
     border-top-right-radius:40px;
-        
+    position: absolute;
+    margin-top: -30px;   
     padding-bottom: 20px;
     width: 100%;
 }
@@ -100,10 +101,12 @@ p, .price, .checkbox{
     margin: 0;
     font-size: 0.8em;
 }
+
 .menu__details .menu__text-1, .menu__text-2, .menu__text-3{
     width: 95%;
     height: 50px;
     background-color: #fff;
+    box-shadow: 3px 3px 3px #ceccccec;
     border-radius: 15px;
     padding-left: 15px;
     padding-top: 15px;
@@ -114,6 +117,7 @@ p, .price, .checkbox{
     width: 95%;
     height: 50px;
     background-color: #fff;
+    box-shadow: 3px 3px 3px #ceccccec;
     border-radius: 15px;
     padding-left: 15px;
     padding-top: 15px;
@@ -124,16 +128,52 @@ p, .price, .checkbox{
     width: 95%;
     height: 50px;
     background-color: #fff;
+    box-shadow: 3px 3px 3px #ceccccec;
     border-radius: 15px;
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 8px;
     margin-bottom: 25px;
 }
-.menu__text-1:active{
+.menu__text-1:hover,
+.menu__text-2:hover,
+.menu__text-3:hover,
+.menu__text-4:hover,
+.menu__text-5:hover,
+.menu__text-6:hover,
+.menu__text-7:hover,
+.menu__text-8:hover,
+.menu__text-9:hover{
     cursor: pointer;
-    text-overflow: ellipsis;
 }
+/*.checkbox{
+    width:  45px;
+    height: 50px;
+    background-color: #99E2D0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+    opacity: 0;
+} 
+.price:active{   
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}*/
+
+ /* ----------------------------------------
+     animation slide-left
+    ----------------------------------------*/
+/* @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-40px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }*/
+  
+
 .command-btn{
     display: flex;
     align-items: center;
@@ -141,19 +181,21 @@ p, .price, .checkbox{
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 25px;
     height: 50px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 30px 80px;
+    cursor: pointer;
 }
 .command-btn a{
     color:  #fff;
     text-decoration: none;
 }
+
 /*--Footer--*/
 footer{
     background-color: rgb(63, 61, 61); 
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    margin-top: 20px;
 }
 .footer__logo h2{
     padding-left: 40px;
