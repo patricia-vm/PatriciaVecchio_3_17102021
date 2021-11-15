@@ -1,0 +1,353 @@
+/*****--Menus palette, note, française et délice-*****/
+
+/*--------------Common-------------*/
+
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}     
+.header__logo{
+    font-family: 'Shrikhand', cursive;
+} 
+.footer__logo h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: normal;
+}
+.restaurant-name h1{
+    font-family: 'Shrikhand', cursive;
+}  
+a, p, h2, h3, div, ul, li{
+    font-family: 'Roboto', sans-serif;
+}  
+/*--header--*/
+.header__logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding-top: 25px; 
+ }  
+ .header__logo .fa-arrow-left{
+    color: #000; 
+    position: absolute;
+    left: 15px; 
+    bottom: 15px;    
+    
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%; 
+    position: relative;
+    bottom: -30px;
+}
+ /*--Main--*/
+.grey-box{
+    background-color: #f5f5f5;
+    border-top-left-radius: 40px;
+    border-top-right-radius:40px;
+    position: relative;  
+    padding-bottom: 20px;
+    width: 100%;
+   
+}
+.restaurant-name{
+    display: flex;
+ }
+.restaurant-name h1{
+    font-size: 1.5em;
+    padding-left: 25px;
+ }
+.heart i{ 
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+.heart .fas{
+    color: transparent;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+.heart:hover .fas{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*--Section--*/
+#menu__card{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.subtitle{
+    font-size: 1em;
+    font-weight: normal;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+.legend{
+    align-items: center;
+    position: relative;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #ceccccec;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.menu__text-1,
+.menu__text-2,
+.menu__text-3,
+.menu__text-4{
+    animation: show 2s ease-in-out; 
+}
+.menu__text-5,
+.menu__text-6,
+.menu__text-7{
+    animation: show 2s 1s ease-in-out; 
+}
+.menu__text-8,
+.menu__text-9,
+.menu__text-10{
+    animation: show 2s 2s ease-in-out; 
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu__details .legend:hover{
+    cursor: pointer;
+}
+h3, p{
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+h3{
+    padding-top: 5px;
+    font-size: 1em;
+}
+p{
+    font-size: 0.85em;
+}
+.legend{
+    align-items: center;
+}
+.menu{
+    display: flex;
+    overflow: hidden;
+}
+.items{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: .8em;
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+
+}
+.checkbox{
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    padding: 15px;
+    background-color: #99E2D0;
+    margin-right: -20px;
+    width: 20px;
+    transition: margin-right 0.5s;
+}
+.menu:hover .checkbox{
+    margin-right: 0;
+}
+ .menu:hover i{
+    animation: spin 0.5s ease-in-out;
+}
+ .menu i{ 
+    display: grid;
+    place-items: center;
+    background: white;
+    color: #99E2D0;
+    width: 20px;
+    font-size: 1.5em;
+    border-radius: 15px;
+}
+
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: rotate(-270deg);
+        transform: rotate(-270deg);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+
+.command-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 25px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #8440D8;
+}
+.command-btn:hover{
+   opacity: .85;
+}
+.command-btn a{
+    color:  #fff;
+    text-decoration: none; 
+}
+
+/*--Footer--*/
+footer{
+    background-color: rgb(63, 61, 61); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    width: 100%;
+}
+.footer__logo h2{
+    padding-left: 40px;
+}
+ul li{
+    list-style-type: none;
+    padding-bottom: 5px; 
+}
+ .footer__links a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 0.8em;    
+}
+.footer__links i{
+    padding-right: 15px;
+    color: #fff;
+    font-size: 0.8em;
+}
+ 
+            
+/*------------------------Mobile--------------------*/
+
+ @media screen and (max-width: 767px){
+
+/*--Section M--*/
+    .subtitle{
+        border-bottom: 2px solid #99E2D0;
+        width: 10%; 
+    }
+    .command-btn{
+        margin: 40px 80px 20px;
+    }
+}
+
+/*-------------------Tablette----------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+ 
+/*--HeaderD--*/
+.picture{
+    max-height: 500px;
+}
+
+/*--Section T--*/
+    .subtitle{
+        border-bottom: 3px solid #99E2D0;
+        width: 5%; 
+    } 
+    .command-btn{
+       margin-right: 35%;
+       margin-left: 35%;
+    }
+       
+ /*--Footer T--*/
+    footer{
+        text-align: center;
+    }
+    .footer__logo h2{
+        font-size: 1.6em;
+    }
+}
+            
+            
+/*--------------------Desktop----------------*/
+
+@media screen and (min-width: 1280px){
+
+/*--HeaderD--*/
+    .picture{
+        height: 500px;
+    }
+
+/*--Main D--*/
+    h1{
+        margin-left: 40px;
+        margin-bottom: 60px;
+    }
+
+ /*--Section D--*/
+    .subtitle{
+        border-bottom: 3px solid #99E2D0;
+        width: 2.5%;
+        height: 25px;
+        width: small;
+        position: relative;
+        bottom: 25px;
+        left: 50px;
+    } 
+    .menu__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+    .menu__details{
+        display: flex;
+    }
+     .legend{
+        display: flex;
+        flex-wrap: wrap;
+        width: 360px;
+        margin: 30px 60px 30px 0;  
+    }      
+    .command-btn{
+        margin-right: 40%;
+        margin-left: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }  
+    
+ /*--Footer D--*/
+    footer{
+        text-align: center;
+    }
+    .footer__logo h2{
+        font-size: 1.6em;
+    }
+}
+
+/*--end--*/
