@@ -14,11 +14,16 @@ body{
  a, p, h1, h2, h3, div, ul, li{
      font-family: 'Roboto', sans-serif;
  }
+ a{
+    text-decoration: none;
+ }
 
 /*--Header--*/
 .header__logo{
     display: flex;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 .search__location{
     display: flex;
@@ -38,7 +43,7 @@ input{
 /*--Main--*/
 /*--article--*/
 article{
-    width: 100%;     
+    width: 100%;   
     background-color: #F5F5F5; 
 }
 article h1{
@@ -49,26 +54,28 @@ article h1{
 }
 article h2{
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     color: grey;
-    padding: 0 20px 25px;
+    padding: 0 30px 25px;
     font-weight: normal;  
 }
-article a{
+.booking__btn-1{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    border: 1px transparent solid;
-    border-radius: 50px;
-}
-.booking__btn-1{
     background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px;
     color: #fff;
     box-shadow: 5px 5px 5px #8440D8;
+    font-size: 1.1em;
+    height: 50px;
 }
 .booking__btn-1:hover{
-   opacity: .85;
+    background: linear-gradient(#9356DC,#FF79DA);
+    border-radius: 50px; 
+    opacity: .85;
+    box-shadow: 6px 10px 6px grey;
+    transition: 200ms;
 }
 
  /*--Aside-*/
@@ -79,7 +86,7 @@ article a{
     display: flex;
     flex-direction: row;
     align-items: center; 
-    text-decoration: none;
+ 
     border: 1px transparent solid;
     border-radius: 20px;
     box-shadow: 3px 3px 3px #ceccccec;
@@ -90,21 +97,27 @@ article a{
 } 
 .button-2:hover{
     background: linear-gradient(#f1d9eb, #dfcff3);
-    box-shadow: 4px 4px 4px #c6a6ee;
+    box-shadow: 6px 10px 6px #ceccccec;
     transition: 200ms;
 }
 .button-3:hover{
     background: linear-gradient(#f1d9eb, #dfcff3);
-    box-shadow: 4px 4px 4px #c6a6ee;
+    box-shadow: 6px 10px 6px #ceccccec;
     transition: 200ms;
 }
 .button-4:hover{
     background: linear-gradient(#f1d9eb, #dfcff3);
-    box-shadow: 4px 4px 4px #c6a6ee;
+    box-shadow: 6px 10px 6px #ceccccec;
     transition: 200ms;
 }
+.steps a:hover i::before{
+    color: #9356DC;
+}
 aside .round{
-    border-radius: 100%;
+    border-radius: 50%;
+    width: 24px;
+    height: 20px;
+    padding-top: 6px;
     text-align: center;
     background-color: #9356DC;
     color:  #fff;
@@ -131,7 +144,7 @@ aside .round{
     position: relative;
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 2px 2px 2px #f2f2f2;
+    box-shadow: 4px 5px 4px lightgrey;
 }
 .restaurant-card img{
     object-fit: cover;
@@ -148,23 +161,23 @@ aside .round{
 } 
  .new{
     background-color: #99E2D0;
-    width: 70px;
-    height: 20px;
+    width: 65px;
+    height: 16px;
     font-size: 0.9em;
     text-align: center;
-    padding-top: 5px;
+    padding: 2px 0;
     color: #257e67;
     font-weight: bold;
     position: absolute; 
-    right: 15px;
-    top: 15px;  
+    right: 10px;
+    top: 10px;  
  }
  .fa-heart{
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: grey;
     position: absolute;
     right: 15px;
-    bottom: 18px;
+    bottom: 32px;
 }
 .heart .fas{
     color: transparent;
@@ -178,9 +191,9 @@ aside .round{
     opacity: 1;
 }
   /*--Footer--*/
-  footer{
+footer{
     background-color: rgb(63, 61, 61); 
-    padding: 20px 0;
+    padding: 10px 0;
  }
  .footer__logo h2{
     color: #fff;
@@ -194,22 +207,30 @@ ul li{
 .footer__links a{
     color: #fff; 
     text-decoration: none;
+    font-size: 0.8em;
+}
+li a:hover,
+li a:focus{
+    text-decoration: underline #FF79DA; 
 }
 .footer__links i{
-   padding-right: 15px;
-   color: #fff;
+    padding-right: 10px;
+    font-size: 0.8em;
 }
 
 
 /*----------------------Mobile------------------------*/  
 
 @media screen and (max-width: 767px){
+
 /*--Header M--*/
     .header__logo{
-        margin: 35px 35px 5px 30px;
+        margin-right: 35px;
+        margin-left:  30px;
+        
     }
     aside{
-        margin: 30px 30px;
+        margin: 30px 25px;
     }
     .text_color::placeholder{
         color: black;
@@ -221,25 +242,21 @@ ul li{
         background-color: #e2e2e2;  
         border-top: 4px #d2d6d6 solid;
     }
+
 /*--article M--*/
     article{
         height: 300px;     
     }
-    article a{
-        margin-right: 70px;
-        margin-left: 70px;
-        height: 50px;
-    }
+  .booking__btn-1{
+    margin-right: 20vw;
+    margin-left: 20vw; 
+  }
+      
 
 /*--Aside M--*/
     aside .steps{
         flex-direction: column;  
      }   
-    aside .round{
-        width: 23px;
-        height: 23px;
-        padding-top: 5px;
-    }
     
 /*--Section M--*/
     #restaurants h2{
@@ -249,17 +266,19 @@ ul li{
     }
     .places{
         flex-direction: column; 
-        width: 100%; 
-    }  
+        width: 95%;
+        padding: 0 12px;
+    }   
     .restaurant-card{
         flex-direction: column;
-        width: 150%;
-        height: 245px; 
-        margin-top: 190px;
+        justify-content: center;
+        width: 100%;
+        height: 250px; 
     }
     .restaurant-card img{
-        max-width: 340px;
-    } 
+        width: 100%;
+        height: 180px;
+    }
     .restaurant-card h3{
         padding-left: 10px;
         font-size: 1.05em;
@@ -271,10 +290,7 @@ ul li{
         font-size: 0.85em;
         margin-top: 5px;
     }
-    .details{
-        margin-bottom: 10px;
-    }
-
+  
 /*--Footer M--*/
     .footer__logo h2{
         font-size: 1.1em;
@@ -288,15 +304,23 @@ ul li{
     }
 }
 
-/*----brekapoint supplémentaire de 485px à 767px----*/   
+/*----brekapoint supplémentaire de 432px à 767px----*/   
 
-@media screen and (min-width: 485px) and (max-width: 767px){
+@media screen and (min-width: 432px) and (max-width: 767px){
+
+   /*--Aside--*/
+    .booking__btn-1{
+        margin-right: 25vw;
+        margin-left: 25vw; 
+      }
+
     /*--Section--*/
+    .restaurant-card{
+        height: 260px;
+    }
     .restaurant-card img{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        min-width: 100%;
-        height: 180px;
+       object-position: top;
+        height: 190px;
     }
 }
 
@@ -306,10 +330,7 @@ ul li{
 @media screen and (min-width: 768px) and (max-width: 1280px){
 
     /*--Header T--*/
-    .header__logo{
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+        
      .header__logo a{
         font-size: 1em;
     }
@@ -328,11 +349,10 @@ ul li{
     article{
         height: 250px;     
     }
-    article a{
-        margin-right: 200px;
-        margin-left: 200px;
-        height: 50px;
-    }
+    .booking__btn-1{
+        margin-right: 30vw;
+        margin-left: 30vw;
+      }
 
     /*--Aside T--*/
     aside .steps{
@@ -351,40 +371,35 @@ ul li{
     .button-4{
         margin-right: 35px;
      }
-    aside .round{
-        width: 24px;
-        height: 20px;
-        padding-top: 7px;
-    }
    
- /*--Section T--*/
+    /*--Section T--*/
     #restaurants h2{
-        padding: 40px 35px 0;
+        padding: 40px 0 20px 35px;
+        margin-bottom: 0;
     }  
     .restaurants__group{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 110px;
         margin-bottom: 0;
+        padding-bottom: 0;
     }
     .places{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 45%; 
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
     .restaurant-card{ 
         display: flex; 
         flex-wrap: wrap;
-        justify-content: center;
-        width: 98%;
-        height: 210px; 
+        width: 100%;
+        height: 260px; 
     }
-    .restaurant-card img{
-        width: 320px;  
-        height: 140px; 
+   .restaurant-card img{ 
+        width: 100%;
+        height: 180px;
     } 
     .restaurant-card h3{
         font-size: 1.2em;
@@ -396,14 +411,11 @@ ul li{
         margin-top: 0;
     }
     .details{
-        margin-top: 20px;
+        margin-top: 5px;
         margin-right: 20px;
+        padding-left: 20px;
     }   
-    .restaurant-card .fa-heart{
-        left: 270px;
-        bottom: 30px;  
-    }
-  
+    
     /*--Footer T--*/
     footer{
         width: 100%;
@@ -424,6 +436,17 @@ ul li{
 }
 
 
+/*----brekapoint supplémentaire de 936px à 1279px----*/   
+
+@media screen and (min-width: 936px) and (max-width: 1279px){
+ 
+     /*--Section--*/
+     .restaurant-card img{
+        object-position: top;
+     }
+ }
+
+
 /*----------------Desktop------------*/
 
 @media screen and (min-width: 1280px){
@@ -441,17 +464,17 @@ ul li{
         margin-right: 25px; 
     }
     .search__location{
-        margin-bottom: 10px;
         box-shadow: 2px 2px 2px #f5f5f5;
     }
     .search__icon, .input-field{
         display: inline-block;
-        padding-left: 25px;   
+        padding-left: 25px;  
+        align-items: center;
     }
     input{
         border: none;
         width: 150px;
-        height: 50px;  
+        height: 45px;  
         padding-left: 15px;
     }
     .text_color::placeholder{
@@ -464,20 +487,10 @@ ul li{
     article{
         height: 250px;     
     }
-    article h1{
-        font-size: 1.6em;
-    }
-    article h2{
-        font-size: 1em;  
-    }
-    article a{
-        margin-right: 500px;
-        margin-left: 500px;
-        height: 60px;  
-    }
     .booking__btn-1{
-        font-size: 1.2em;
-    } 
+        margin-right: 40vmax;
+        margin-left: 40vmax;
+      }
 
 /*--Aside D--*/
     aside .steps{
@@ -496,13 +509,6 @@ ul li{
     .button-4{
         margin-right: 18px;
      }
-    aside .round{
-        width: 25px;
-        height: 18px;
-        border-radius: 50%;
-        padding-top: 6px;
-        padding-bottom: 2px;
-     }
     .button-2 .round{
         position: relative;
         right: 10px;
@@ -515,21 +521,23 @@ ul li{
     }  
 
     /*--Section D--*/
+    #restaurants{
+        padding-bottom: 20px;
+    }
     #restaurants h2{
-        padding: 30px 25px 25px;
+        padding: 30px 0 20px 25px;
+        margin-bottom: 0;
      }
     .restaurants__group{
         display: flex;
         flex-wrap: wrap;;
-        justify-content: space-between;
-        margin-top: 110px;
-        margin-bottom: 0;
+        justify-content: space-around;
     }
      .places{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 25%;     
+        width: 22%;     
     }
     .restaurant-card{ 
         display: flex;
@@ -538,17 +546,21 @@ ul li{
         width: 100%;
         height: 220px; 
     }
-    .restaurant-card img{
-        width: 310px;
-        height: 155px;
-    } 
-    .details{
-        padding: 0; 
-        display: inline-block; 
-        margin-right: 110px;
+    .restaurant-card:hover{
+        transform: scale(1.05);
     }
+    .restaurant-card img{
+        width: 100%;
+        height: 155px;
+    }
+    .details{
+       display: flex;
+       flex-wrap: wrap;
+        margin-right: 120px;
+        padding: 0 0 0 15px;
+    }  
     .restaurant-card h3{
-        margin-bottom: 0;
+        margin-top: 0;
         font-size: 1.1em;
     }
     .restaurant-card p{
@@ -564,17 +576,35 @@ ul li{
      .footer__logo h2{
         font-size: 1.6em;
     }
-   ul{
+    ul{
         padding-left: 0;
     }
-     .footer__links a{
+    .footer__links a{
          font-size: 0.9em; 
      }
-     .footer__links i{
+    .footer__links i{
         font-size: 0.9em;
      }
-
  }
+
+
+/*----brekapoint supplémentaire de 1280px à 1281px----*/   
+
+@media screen and (min-width: 1280px) and (max-width: 1281px){
+    /*--Section--*/
+    .details h3{
+        padding-right: 0;
+     }
+ }
+
+/*----brekapoint supplémentaire à 1329px----*/   
+
+@media screen and (min-width: 1329px){
+    /*--Section--*/
+    .details{
+        padding-left: 20px;
+    }
+}
  /*--end--*/
 
 /*--------Loader---------*/  
@@ -663,5 +693,4 @@ ul li{
     100%{
         visibility: hidden;
     }
-
 }
