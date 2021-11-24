@@ -319,7 +319,6 @@ li a:focus{
         height: 260px;
     }
     .restaurant-card img{
-       object-position: top;
         height: 190px;
     }
 }
@@ -434,16 +433,6 @@ li a:focus{
         font-size: 0.9em;
      }
 }
-
-/*----breakpoint supplémentaire de 936px à 1279px----*/   
-
-@media screen and (min-width: 936px) and (max-width: 1279px){
- 
-     /*--Section--*/
-     .restaurant-card img{
-        object-position: top;
-     }
- }
 
 
 /*----------------Desktop------------*/
@@ -699,8 +688,8 @@ li a:focus{
         animation: appear 3s 1.3s normal both;
     }
 
-@-webkit-keyframes move{
-    0% {’
+@keyframes move{
+    0% {
       -webkit-transform: translateY(300px) scale(1);
       transform: translateY(300px) scale(1);
     }
@@ -722,7 +711,7 @@ li a:focus{
     }
   }
 
-@-webkit-keyframes appear{
+@keyframes appear{
     0%{
         opacity: 0;
         transform: translateY(150px)
@@ -733,7 +722,7 @@ li a:focus{
     }
 }
 
-@-webkit-keyframes hide{
+@keyframes hide{
     0%{
         opacity: 1;
     }
