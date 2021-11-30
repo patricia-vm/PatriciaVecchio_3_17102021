@@ -280,6 +280,9 @@ li a:focus{
     .command-btn{
         margin: 40px 80px 20px;
     }
+    .command-btn a{
+        padding-right: 30px;
+    }
 
     /*--Footer M--*/
     .footer__logo h2, a{
